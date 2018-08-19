@@ -1,0 +1,50 @@
+/* Social Icons */
+.socialContact{
+    color: #2699FB;
+    margin: 15px 0;
+    margin-top: 20px;
+}
+i.fa.socialContactMin {
+    font-size: 10px;
+    text-align: left;
+    text-decoration: none;
+    color: #2699FB;
+    margin: 0 0;
+    padding-left: 0px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+a.fa.socialContactMax{
+    text-align:right;
+    font-family: Roboto, sans-serif;
+    padding-left:0px;
+    padding-right:0px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+/* Media Queries */
+    /* Extra small devices (phones, 600px and down) */
+    /* @media only screen and (max-width: 600px) {...}  */
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    /* @media only screen and (min-width: 600px) {...}  */
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    /* @media only screen and (min-width: 768px) {...}  */
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .socialContact{
+            padding-right: 12.5px;
+        }
+    } 
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .socialContact{
+            padding-right: 12.5px;
+        }
+    }
