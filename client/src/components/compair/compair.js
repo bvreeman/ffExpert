@@ -40,9 +40,22 @@ const sampleData =
     }
 
 
+    const sampleUserData = [
+        {id: '14', username: 'john', exp: 4},
+        {id: '23', username: 'john', exp: 8},
+        {id: '44', username: 'john', exp: 14},
+        {id: '1', username: 'john', exp: 32},
+        {id: '76', username: 'john', exp: 12},
+        {id: '2', username: 'john', exp: 47}
+    ]
+
+
+
 
 
 class Compair extends Component {
+
+    completeVote
 
     votePercent1 = (data) =>  {
         console.log(data);
@@ -63,6 +76,7 @@ class Compair extends Component {
             <div> Votes: {this.votePercent1(sampleData)}%  Say {playerBio1.firstName} Is better </div>
             <div> Votes: {this.votePercent2(sampleData)}%  Say {playerBio2.firstName} Is better </div>
             <div>Weighted Votes: </div>
+            <span  className=" test parallelogram" > 123 </span>
          </div>
         ) 
     }
