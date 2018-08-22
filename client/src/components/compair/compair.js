@@ -41,12 +41,12 @@ const sampleData =
 
 
     const sampleUserData = [
-        {id: '14', username: 'john', exp: 4},
-        {id: '23', username: 'john', exp: 8},
-        {id: '44', username: 'john', exp: 14},
-        {id: '1', username: 'john', exp: 32},
-        {id: '76', username: 'john', exp: 12},
-        {id: '2', username: 'john', exp: 47}
+        {id: '14', username: 'john', exp: 4, openVotes:[{matchId:'20181', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] },
+        {id: '23', username: 'bravo', exp: 8, openVotes:[{matchId:'20181', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] },
+        {id: '44', username: 'tj', exp: 14, openVotes:[{matchId:'20181', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] },
+        {id: '1', username: 'mike', exp: 32, openVotes:[{matchId:'20181', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] },
+        {id: '76', username: 'eric', exp: 12, openVotes:[{matchId:'20181', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] },
+        {id: '2', username: 'Sam', exp: 47, openVotes:[{matchId:'20181', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] }
     ]
 
 
@@ -55,7 +55,9 @@ const sampleData =
 
 class Compair extends Component {
 
-    completeVote
+    closeVote = () => {
+        sampleUserData.map()
+    }
 
     votePercent1 = (data) =>  {
         console.log(data);
