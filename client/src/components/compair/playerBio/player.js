@@ -9,7 +9,7 @@ class Player extends Component {
         return (
          <div className="player-block"> 
                 <div>Name: {this.props.playerData.firstName} </div>
-                <img src={this.props.playerData.img} width="250" />
+                <img src={this.props.playerData.img} className="bio-pic" />
          </div>
         ) 
     }
