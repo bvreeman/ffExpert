@@ -42,7 +42,7 @@ class ExpertChart extends Component {
                             </tr> 
                         </thead>
                         <tbody>
-                        {this.props.expert.map((expert, index) => <tr key={`row-${index}`}> <td> <img width="30" src="https://vignette.wikia.nocookie.net/sote-rp/images/c/c4/User-placeholder.png/revision/latest?cb=20150624004222" /> </td> <td >{expert.username}</td><td  >{expert.rankPoints.week}</td><td  >{expert.openVotes[0].vote}</td><td>{expert.openVotes[0].comment}</td></tr>)}
+                        {this.props.expert.map((expert, index) => <tr key={`row-${index}`}> <td> <img width="30" alt='user thumbnail' src="https://vignette.wikia.nocookie.net/sote-rp/images/c/c4/User-placeholder.png/revision/latest?cb=20150624004222" /> </td> <td >{expert.username}</td><td  >{expert.rankPoints.week}</td><td  >{expert.openVotes[0].vote}</td><td>{expert.openVotes[0].comment}</td></tr>)}
                         </tbody>   
                     </table>    
             </div>    
