@@ -1,0 +1,16 @@
+.player-block {
+    width:40%;
+    height:200px;
+    border:1px solid black;
+    float: left;
+    margin:15px;
+}
+
+.blue {
+    background: blue;
+}
+
+.bio-pic{
+    max-width: 300px;
+    width: 100%;
+}
