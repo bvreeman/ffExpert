@@ -9,17 +9,16 @@ import FirebaseSignIn from './components/FirebaseComponents/FirebaseSignIn';
 import FirebasePasswordForgetPage from './components/FirebaseComponents/FirebasePasswordForget';
 import FirebaseAccount from './components/FirebaseComponents/FirebaseAccount';
 import FirebaseWithAuthentication from './components/FirebaseComponents/FirebaseWithAuthentication';
+import * as routes from './constants/routes';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-        <Router>
+      <Router>
         <div id="page">
           <Header />
             <Switch>
-              <Route exact path='/' component={Home}/>
+              {/* <Route exact path='/' component={Home}/> */}
               {/* <Route exact path={routes.LANDING} component={() => <LandingPage />} /> */}
               <Route exact path={routes.SIGN_UP} component={() => <FirebaseSignUp />} />
               <Route exact path={routes.SIGN_IN} component={() => <FirebaseSignIn />} />
@@ -27,17 +26,12 @@ class App extends Component {
               {/* <Route exact path={routes.HOME} component={() => <HomePage />} /> */}
               <Route exact path={routes.ACCOUNT} component={() => <FirebaseAccount />} />
             </Switch>
+            <Compair />
           <Footer />
         </div>
       </Router>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Compair />
-      </div>
     );
   }
 }
 
-export default App;
+export default FirebaseWithAuthentication(App);
