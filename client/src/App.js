@@ -10,6 +10,7 @@ import FirebasePasswordForgetPage from './components/FirebaseComponents/Firebase
 import FirebaseAccount from './components/FirebaseComponents/FirebaseAccount';
 import FirebaseWithAuthentication from './components/FirebaseComponents/FirebaseWithAuthentication';
 import * as routes from './constants/routes';
+import Login from './components/login/login'
 
 class App extends Component {
   render() {
@@ -25,8 +26,9 @@ class App extends Component {
               <Route exact path={routes.PASSWORD_FORGET} component={() => <FirebasePasswordForgetPage />} />
               {/* <Route exact path={routes.HOME} component={() => <HomePage />} /> */}
               <Route exact path={routes.ACCOUNT} component={() => <FirebaseAccount />} />
+              <Route exact path={routes.LOGIN} component={() => <Login />} />
             </Switch>
-            <Compair />
+            {/* <Compair /> */}
           <Footer />
         </div>
       </Router>
