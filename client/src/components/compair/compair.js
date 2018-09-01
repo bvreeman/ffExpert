@@ -55,9 +55,35 @@ const sampleData =
 
 
 class Compair extends Component {
+
+    state = {
+        expert : []
+    }
+
+    componentDidMount(){
+       let filtersUsers  = this.filterUserVotedata(sampleUserData);
+
+       this.setState({expert: filtersUsers});
+    }
+    /**
+     * This loops though user list and consolidates the all the vote data to only contain the this vote.
+     */
+    filterUserVotedata = (users) =>{
+        const userList = users.map((user) => {
+           let currentVote = user.openVotes.filter( (vote) => vote.compairsonID === sampleData.compairsonID);
+           user.openVotes = currentVote;
+           return user;
+            })
+
+       return userList    
+   }
+
     //TODO: Move To..?
-    closeVote = () => {
-        sampleUserData.map()
+    closeVote = (voteId, winner = 'Tom') => {
+     sampleData.voterId.forEach((userId) => {
+         const user =  this.findUser(userId);
+
+     } )
     }
 
     //TODO:Move to Service
@@ -84,9 +110,7 @@ class Compair extends Component {
         return  ((data.rawVote[1] /toatlVotes) * 100).toFixed(2);
      }
 
-     closeVote = (winner) => {
-       
-    }
+
 
     render(){
         return (
@@ -103,7 +127,7 @@ class Compair extends Component {
            
   
                 <button onClick={() => this.closeVote() } >Close Vote </button>
-                <ExpertChart compairsonID={sampleData.compairsonID} expert={sampleUserData} />
+                <ExpertChart compairsonID={sampleData.compairsonID} expert={this.state.expert} />
          </div>
         ) 
     }

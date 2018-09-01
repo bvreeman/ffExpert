@@ -3,29 +3,6 @@ import React , { Component } from 'react';
 
 class ExpertChart extends Component {
 
-    state = {
-        expert : []
-    }
-
-    componentDidMount(){
-       let filtersUsers  = this.filterUserVotedata(this.props.expert);
-
-       this.setState({expert: filtersUsers});
-    }
-    /**
-     * This loops though user list and consolidates the all the vote data to only contain the this vote.
-     */
-    filterUserVotedata = (users) =>{
-         const userList = users.map((user) => {
-            let currentVote = user.openVotes.filter( (vote) => vote.compairsonID === this.props.compairsonID);
-            user.openVotes = currentVote;
-            return user;
-             })
-
-        return userList    
-    }
-
- 
 
     render(){
         return (
