@@ -17,9 +17,15 @@
 .env.production.local
 /client/src/.env
 ./client/.env
+<<<<<<< HEAD
 /client/.env
 
+=======
+*.env
+>>>>>>> 1fcc74bde30dbf5e488c36965aff090bfd135690
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.env
+./client/.env
