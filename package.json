@@ -4,12 +4,12 @@
   "private": true,
   "main": "server.js",
   "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "path": "^0.12.7",
-    "react": "^16.4.2",
-    "react-scripts": "^1.1.4"
+    "react": "^16.8.6",
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "dev": "node server.js",
@@ -22,8 +22,8 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "devDependencies": {
-    "concurrently": "^3.6.1",
-    "nodemon": "^1.18.3"
+    "concurrently": "^4.1.1",
+    "nodemon": "^1.19.1"
   },
   "repository": {
     "type": "git",

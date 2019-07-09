@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Player from './playerBio/player';
 import ExpertChart from './expertChart/expertChart'
-import './compair.css';
+import './Compare.css';
 
 
 const playerBio1 = {
@@ -32,7 +32,7 @@ const playerBio2 = {
 
 const sampleData = 
     { 
-        compairsonID: '20181',
+        comparisonID: '20181',
         firstPlayer:  playerBio1,
         secondPlayer: playerBio2 ,
         rawVote: [ 26 , 5 ],
@@ -42,19 +42,19 @@ const sampleData =
 
 
     const sampleUserData = [
-        {id: '14', username: 'John', rankPoints:{ week:1, biweek:1, month:4, season:6 }, exp: 4, openVotes:[{compairsonID:'20181', vote:'Tom', comment:'Toms The best'}, {compairsonID:'20182', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'} ] },
-        {id: '23', username: 'Bravo', rankPoints:{ week:3, biweek:1, month:4, season:6 }, exp: 8, openVotes:[{compairsonID:'20181', vote:'Andrew', comment:''}] },
-        {id: '44', username: 'Tim', rankPoints:{ week:0, biweek:1, month:4, season:6 }, exp: 14, openVotes:[{compairsonID:'20181', vote:'Andrew', comment:'He has better Yars'}, {compairsonID:'20183', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] },
-        {id: '1', username: 'Mike', rankPoints:{ week:2, biweek:1, month:4, season:6 }, exp: 32, openVotes:[{compairsonID:'20181', vote:'Tom', comment:'First'}, {compairsonID:'20187', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] },
-        {id: '76', username: 'FootballFan', rankPoints:{ week:10, biweek:1, month:4, season:6 }, exp: 12, openVotes:[{compairsonID:'20181', vote:'Tom', comment:'blah'}] },
-        {id: '2', username: 'Sam', rankPoints:{ week:4, biweek:1, month:4, season:6 }, exp: 47, openVotes:[{compairsonID:'20181', vote:'Tom', comment:"He's my Boy thats why"}] }
+        {id: '14', username: 'John', rankPoints:{ week:1, biweek:1, month:4, season:6 }, exp: 4, openVotes:[{comparisonID:'20181', vote:'Tom', comment:'Toms The best'}, {comparisonID:'20182', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'} ] },
+        {id: '23', username: 'Bravo', rankPoints:{ week:3, biweek:1, month:4, season:6 }, exp: 8, openVotes:[{comparisonID:'20181', vote:'Andrew', comment:''}] },
+        {id: '44', username: 'Tim', rankPoints:{ week:0, biweek:1, month:4, season:6 }, exp: 14, openVotes:[{comparisonID:'20181', vote:'Andrew', comment:'He has better Yars'}, {comparisonID:'20183', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] },
+        {id: '1', username: 'Mike', rankPoints:{ week:2, biweek:1, month:4, season:6 }, exp: 32, openVotes:[{comparisonID:'20181', vote:'Tom', comment:'First'}, {comparisonID:'20187', vote:'Tom', comment:'I think they would bet betetter because blash blah blah'}] },
+        {id: '76', username: 'FootballFan', rankPoints:{ week:10, biweek:1, month:4, season:6 }, exp: 12, openVotes:[{comparisonID:'20181', vote:'Tom', comment:'blah'}] },
+        {id: '2', username: 'Sam', rankPoints:{ week:4, biweek:1, month:4, season:6 }, exp: 47, openVotes:[{comparisonID:'20181', vote:'Tom', comment:"He's my Boy thats why"}] }
     ]
 
 
 
 
 
-class Compair extends Component {
+class Compare extends Component {
     //TODO: Move To..?
     closeVote = () => {
         sampleUserData.map()
@@ -103,10 +103,10 @@ class Compair extends Component {
            
   
                 <button onClick={() => this.closeVote() } >Close Vote </button>
-                <ExpertChart compairsonID={sampleData.compairsonID} expert={sampleUserData} />
+                <ExpertChart comparisonID={sampleData.comparisonID} expert={sampleUserData} />
          </div>
         ) 
     }
 }
 
-export default Compair;
+export default Compare;

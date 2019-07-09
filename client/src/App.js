@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer/Footer';
-import Compair from './components/compair/compair';
+import Compare from './components/compair/Compare';
 import FirebaseSignUp from './components/FirebaseComponents/FirebaseSignUp';
 import FirebaseSignIn from './components/FirebaseComponents/FirebaseSignIn';
 import FirebasePasswordForgetPage from './components/FirebaseComponents/FirebasePasswordForget';
@@ -26,7 +26,7 @@ class App extends Component {
               {/* <Route exact path={routes.HOME} component={() => <HomePage />} /> */}
               <Route exact path={routes.ACCOUNT} component={() => <FirebaseAccount />} />
             </Switch>
-            <Compair />
+            <Compare />
           <Footer />
         </div>
       </Router>
